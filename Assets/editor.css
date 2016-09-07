@@ -380,15 +380,15 @@ div.field[placeholderText][contenteditable=true]:empty:focus:before {
 
 #zss_field_title, #zss_field_title p {
     font-family:"Open Sans", sans-serif;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 19px;
     margin-bottom: 0px;
 }
 
 #zss_field_content {
     margin-bottom: 30px;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 17px;
+    line-height: 19px;
 }
 
 .wp-temp[data-wp-temp="caption"] {
