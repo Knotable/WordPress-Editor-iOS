@@ -111,7 +111,7 @@ a {
 }
 
 blockquote {
-    adding-left: 15px;
+    padding-left: 15px;
     border-left: 3px solid #424242;
     margin-left: 0;
 }
