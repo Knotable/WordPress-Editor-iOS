@@ -50,13 +50,13 @@ body {
     overflow-y: auto;
     min-height: 100vh;
     word-wrap: break-word;
-
+    
 }
 
 p {
-    line-height: 24px;
+    line-height: 19px;
     margin-top: 0px;
-    margin-bottom: 24px;
+    margin-bottom: 19px;
 }
 
 hr {
@@ -106,7 +106,7 @@ video {
 }
 
 a {
-    color: #0087be;
+    color: #28ace8;
     text-decoration: none;
 }
 
@@ -373,6 +373,7 @@ div.field[placeholderText][contenteditable=true]:empty:focus:before {
 }
 
 #separatorDiv {
+    display:none;
     -webkit-user-select: none;
     padding-left: 10px;
     padding-right: 10px;
@@ -383,10 +384,11 @@ div.field[placeholderText][contenteditable=true]:empty:focus:before {
     font-size: 17px;
     line-height: 19px;
     margin-bottom: 0px;
+    color:black;
 }
 
 #zss_field_content {
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-size: 17px;
     line-height: 19px;
 }
