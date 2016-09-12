@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A239m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -12,7 +12,6 @@
             <subviews>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzl-cy-vzk">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <animations/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="2hQ-8w-6RU"/>
                     </constraints>
@@ -30,7 +29,6 @@
                         <barButtonItem title="OL" width="44" id="kfx-Aq-jgM" customClass="ZSSBarButtonItem"/>
                         <barButtonItem title="Qu" width="44" id="e8U-7y-KIf" customClass="ZSSBarButtonItem"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="lEj-Ro-ZKf"/>
-                        <barButtonItem title="HTML" width="44" id="xVr-Zr-pE2" customClass="ZSSBarButtonItem"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="f0U-5E-Lnh"/>
                     </items>
                     <variation key="default">
@@ -47,7 +45,6 @@
                 </toolbar>
                 <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n1r-fs-i80">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <animations/>
                     <items>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="dUc-fD-xmY"/>
                         <barButtonItem title="Img" width="44" style="plain" id="IvH-tE-Dmv" customClass="ZSSBarButtonItem"/>
@@ -64,13 +61,11 @@
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="AxR-HN-bG5"/>
                         <barButtonItem title="Li" width="44" style="plain" id="9hH-p8-Ocr" customClass="ZSSBarButtonItem"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="bqO-yZ-MVf"/>
-                        <barButtonItem title="HTML" width="44" style="plain" id="tE5-OT-rCk" customClass="ZSSBarButtonItem"/>
                         <barButtonItem style="plain" systemItem="flexibleSpace" id="KpA-gG-9xb"/>
                     </items>
                 </toolbar>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5oj-N8-CBI">
                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="DQc-We-xJ8"/>
@@ -93,7 +88,6 @@
                     </variation>
                 </view>
             </subviews>
-            <animations/>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="hzl-cy-vzk" secondAttribute="trailing" id="3Cf-0J-TmW"/>
@@ -120,14 +114,14 @@
                     <exclude reference="5oj-N8-CBI"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="KLa-wT-1Gc"/>
-                    <exclude reference="MY8-Yb-Zho"/>
-                    <exclude reference="Yfe-DH-K5f"/>
-                    <exclude reference="kVg-01-4Kx"/>
                     <exclude reference="3Cf-0J-TmW"/>
                     <exclude reference="4b9-4h-eWO"/>
                     <exclude reference="98w-GC-dOE"/>
                     <exclude reference="NZc-BN-ZZf"/>
+                    <exclude reference="KLa-wT-1Gc"/>
+                    <exclude reference="MY8-Yb-Zho"/>
+                    <exclude reference="Yfe-DH-K5f"/>
+                    <exclude reference="kVg-01-4Kx"/>
                     <exclude reference="3Qa-Uv-8nO"/>
                     <exclude reference="9Gh-oq-DQO"/>
                     <exclude reference="b1S-cy-zck"/>
@@ -167,8 +161,6 @@
                 <outlet property="boldButton" destination="UaL-xN-YGn" id="OPT-PS-sNb"/>
                 <outlet property="boldRegularButton" destination="HCj-w0-6sG" id="ITL-Qa-VCX"/>
                 <outlet property="horizontalBorder" destination="5oj-N8-CBI" id="5yq-QA-5ve"/>
-                <outlet property="htmlButton" destination="tE5-OT-rCk" id="szj-xW-Kva"/>
-                <outlet property="htmlRegularButton" destination="xVr-Zr-pE2" id="Vks-1L-dvL"/>
                 <outlet property="imageButton" destination="IvH-tE-Dmv" id="vb0-UY-3LW"/>
                 <outlet property="imageRegularButton" destination="R46-ah-aBg" id="vET-I5-9Rr"/>
                 <outlet property="italicButton" destination="ThL-hp-nFs" id="Ffv-di-sbw"/>

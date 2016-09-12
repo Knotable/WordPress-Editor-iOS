@@ -490,24 +490,24 @@
 
 - (void)initShowSourceBarButton
 {
-    NSString* accessibilityLabel = NSLocalizedString(@"HTML",
-                                                     @"Accessibility label for HTML button on formatting toolbar.");
-    
-    [self initBarButtonItem:self.htmlButton
-                    withTag:kWPEditorViewControllerElementShowSourceBarButton
-               htmlProperty:@"source"
-                  imageName:@"icon_format_html"
-                     target:self
-                   selector:@selector(showHTML:)
-         accessibilityLabel:accessibilityLabel];
-    
-    [self initBarButtonItem:self.htmlRegularButton
-                    withTag:kWPEditorViewControllerElementShowSourceBarButton
-               htmlProperty:@"source"
-                  imageName:@"icon_format_html"
-                     target:self
-                   selector:@selector(showHTML:)
-         accessibilityLabel:accessibilityLabel];
+//    NSString* accessibilityLabel = NSLocalizedString(@"HTML",
+//                                                     @"Accessibility label for HTML button on formatting toolbar.");
+//    
+//    [self initBarButtonItem:self.htmlButton
+//                    withTag:kWPEditorViewControllerElementShowSourceBarButton
+//               htmlProperty:@"source"
+//                  imageName:@"icon_format_html"
+//                     target:self
+//                   selector:@selector(showHTML:)
+//         accessibilityLabel:accessibilityLabel];
+//    
+//    [self initBarButtonItem:self.htmlRegularButton
+//                    withTag:kWPEditorViewControllerElementShowSourceBarButton
+//               htmlProperty:@"source"
+//                  imageName:@"icon_format_html"
+//                     target:self
+//                   selector:@selector(showHTML:)
+//         accessibilityLabel:accessibilityLabel];
 }
 
 - (void)initStrikeThroughBarButton
