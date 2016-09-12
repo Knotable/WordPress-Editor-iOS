@@ -2516,9 +2516,14 @@ ZSSField.prototype.handleKeyDownEvent = function(e) {
     
     if (this.isComposing) {
         e.stopPropagation();
+        
     } else if (wasEnterPressed
                && !this.isMultiline()) {
         e.preventDefault();
+        this.callback("callback-focus-should-change");
+    } else  if (wasEnterPressed
+                && this.isMultiline()) {
+        wrapCaretInParagraphIfNecessary
     } else if (this.isMultiline()) {
         this.wrapCaretInParagraphIfNecessary();
     }

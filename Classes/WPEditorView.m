@@ -414,7 +414,12 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
         if ([self isFocusInScheme:scheme]) {
             [self handleFocusInCallback:url];
             handled = YES;
-        } else if ([self isFocusOutScheme:scheme]) {
+        } else if([self isFocusShouldChangeScheme:scheme]){
+            
+            [self.contentField focus];
+            
+            handled = YES;
+        }else if ([self isFocusOutScheme:scheme]) {
             [self handleFocusOutCallback:url];
             handled = YES;
         } else if ([self isInputCallbackScheme:scheme]) {
@@ -958,6 +963,14 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 	
 	return [scheme isEqualToString:kCallbackScheme];
 }
+
+- (BOOL)isFocusShouldChangeScheme:(NSString*)scheme
+{
+    static NSString* const kCallbackScheme = @"callback-focus-should-change";
+    
+    return [scheme isEqualToString:kCallbackScheme];
+}
+
 
 - (BOOL)isFocusInScheme:(NSString*)scheme
 {
