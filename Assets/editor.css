@@ -388,7 +388,7 @@ div.field[placeholderText][contenteditable=true]:empty:focus:before {
 }
 
 #zss_field_content {
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     font-size: 17px;
     line-height: 19px;
 }
