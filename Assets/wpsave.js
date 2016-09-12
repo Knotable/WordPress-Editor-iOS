@@ -57,11 +57,11 @@ window.wp = window.wp || {};
     // Separate <div> containing <p>
     content = content.replace( /<div( [^>]*)?>\s*<p>/gi, '<div$1>\n\n' );
 
-    // Remove <p> and <br />
-    content = content.replace( /\s*<p>/gi, '' );
-    content = content.replace( /\s*<\/p>\s*/gi, '\n\n' );
-    content = content.replace( /\n[\s\u00a0]+\n/g, '\n\n' );
-    content = content.replace( /\s*<br ?\/?>\s*/gi, '\n' );
+//    // Remove <p> and <br />
+//    content = content.replace( /\s*<p>/gi, '' );
+//    content = content.replace( /\s*<\/p>\s*/gi, '\n\n' );
+//    content = content.replace( /\n[\s\u00a0]+\n/g, '\n\n' );
+//    content = content.replace( /\s*<br ?\/?>\s*/gi, '\n' );
 
     // Fix some block element newline issues
     content = content.replace( /\s*<div/g, '\n<div' );

@@ -2521,9 +2521,6 @@ ZSSField.prototype.handleKeyDownEvent = function(e) {
                && !this.isMultiline()) {
         e.preventDefault();
         this.callback("callback-focus-should-change");
-    } else  if (wasEnterPressed
-                && this.isMultiline()) {
-        wrapCaretInParagraphIfNecessary
     } else if (this.isMultiline()) {
         this.wrapCaretInParagraphIfNecessary();
     }
