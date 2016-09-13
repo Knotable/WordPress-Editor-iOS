@@ -106,6 +106,11 @@ window.wp = window.wp || {};
     if ( preserve_br ) {
       content = content.replace( /<wp-temp-br([^>]*)>/g, '<br$1>' );
     }
+                                                
+    // replace <p><br>/<p> to <p></p>
+    content = content.replace( /<p>(\s)*<br>(\s)*<\/p>/g, '<p></p>' );
+    // remove incorrect <p> tag : <p>...<p></p></p> ==> <p>...</p>
+    content = content.replace( /[(\s)|\n]*<p>[(\s)|\n]*<\/p>[(\s)|\n]*<\/p>/g, '</p>' );
 
     return content;
   }
